@@ -166,7 +166,8 @@ for (x, y), mid in discovered_map.items():
 for x in range(GRID_SIZE + 1):
     cv2.putText(final_map_img, f"X:{x}", (PADDING + x*CELL_SIZE - 15, PADDING - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
 for y in range(GRID_SIZE + 1):
-    cv2.putText(final_map_img, f"Y:{y}", (PADDING - 40, PADDING + y*CELL_SIZE + 5), cv2.FON`_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
+    cv2.putText(final_map_img, f"Y:{y}", (PADDING - 40, PADDING + y*CELL_SIZE + 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
+    
 
 cv2.imshow("Final Generated Map", final_map_img)
 cv2.waitKey(0)
